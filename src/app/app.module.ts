@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrdersComponent } from './orders/orders.component';
 import { SearchBoxDirective } from './search-box.directive';
+import { SalesDataService } from './sales-data.service';
 import { SalesData2Service } from './sales-data2.service';
 
 
@@ -19,7 +20,7 @@ import { SalesData2Service } from './sales-data2.service';
   imports: [
     BrowserModule
   ],
-  providers: [SalesData2Service],
+  providers: [SalesDataService, SalesDataService2],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
